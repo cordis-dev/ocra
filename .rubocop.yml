@@ -1,8 +1,23 @@
+inherit_from: ../.rubocop.yml
+
+require:
+  - rubocop/cop/internal_affairs
+  - rubocop-rspec
+
+inherit_gem:
+  my-shared-gem:
+    - default.yml
+    - strict.yml
+    
+inherit_gem:
+  my-shared-gem: .rubocop.yml
+  cucumber: conf/rubocop.yml
+
 AllCops:
   DisabledByDefault: true
 
 Security/MarshalLoad:
-  Enabled: false
+  Enabled: true
 
 Lint/UselessAssignment:
   Enabled: true
