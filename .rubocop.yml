@@ -1,0 +1,11 @@
+AllCops:
+  DisabledByDefault: true
+
+Security/MarshalLoad:
+  Enabled: false
+
+Lint/UselessAssignment:
+  Enabled: true
+
+Performance/HashEachMethods:
+  Enabled: true
